@@ -1,0 +1,224 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #ECE2D0;
+  --secondary-color: #D5B9B2;
+  --accent1-color: #A26769;
+  --accent2-color: #6D2E46;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: 'Roboto Slab', serif;
+  --paragraph-font: 'Inter', sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: black;  /* headlines on a white background */ 
+  --headline-color-on-color: black; /* headlines on a colored background */ 
+  --paragraph-color-on-white: black; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #A26769;
+  --nav-link-color: #FFFF;
+  --nav-background-color: #6D2E46;
+  --nav-hover-link-color: #6D2E46;
+  --nav-hover-background-color: #D5B9B2;;
+}
+
+html {
+  background-color: var(--primary-color);
+}
+body {
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+header {
+  padding: 1em;
+  margin:auto;
+  text-align: center;
+  color: var(--paragraph-color-on-color);
+  background-image: url("https://cdn.glitch.com/27788a75-2dd2-4e45-aad4-00713b453a67%2Fmath.jpeg?v=1613884445096");
+}
+
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);
+}
+p, ul, ol {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
+  padding: 1em;
+  line-height: 1.5em;
+}
+nav {
+  background-color: var(--nav-background-color);
+  text-align: center;
+  font-size: 1.2em;
+  display:grid;
+  grid-template-columns: 25% 75%;
+  align-items:center;
+  justify-items:center;
+  margin: auto;
+}
+#main-title{
+  background-color: rgba(255,255,255,0.8);
+}
+#logo{
+  width:100%;
+  height:100%;
+  background-repeat:no-repeat;
+  background-size:cover; 
+}
+nav > ul{
+  list-style-type: none;
+  display: flex;
+  margin: auto;
+}
+nav a {
+  min-width: 70px;
+  border-radius:5px;
+  padding:0.5em;
+  text-decoration: none;
+  margin-left:80px;
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+#login{
+  margin-left:40px;
+}
+main{
+  position:relative;
+  background-color:white;
+  padding:2em;
+  margin:3em;
+  display:grid;
+  grid-template-rows: 35em 25em 20em;  
+  padding-bottom:50px;
+  grid-gap:20px;
+}
+section{
+  position:relative;
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
+}
+.sect-1{
+  position:relative;
+  display:grid;
+  grid-row:1/2;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20px 1fr 1fr;
+}
+.sect-1-img{
+  margin-top:10%;
+}
+
+form{
+  margin:auto;
+  display:block;
+}
+input{
+  width:100px;
+  height:35px;
+  margin-left:5px;
+  margin-right:5px;
+  margin-bottom:5px;
+}
+textarea {
+  resize: none;
+  width:80%;
+  height:14em;
+}
+.math-calculator{
+  align-items:center;
+  justify-items:center;
+  display:grid;
+  grid-gap:5%;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 80% 20%;
+  background-color:white;
+  width:50em;
+  height:20em;
+}
+.calculator{
+  grid-column: 1/2;
+  font-size: medium;
+  font-weight: normal;
+  position: relative;
+  direction: ltr;
+  margin-left: 12px;
+  margin-right: 12px;
+  padding-bottom: 12px;
+  padding-top: 16px;
+  display: flex;
+}
+#calculadora{
+  border: 2px solid black;
+  border-radius:3px;
+  background-color:#CDCDCD;
+  margin-bottom:10px;
+}
+#scrn-txt{
+  border: 1px solid black;
+  border-radius:3px; 
+  padding:10px;
+  margin:10px;
+  font-size: 2em;
+  margin-top:5px;
+  background-color:white;
+  text-align:right;
+}
+
+#login-frame{
+    border-style:solid;
+    border-radius: 10px;
+    border-color:black;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 50% 50%;
+}
+
+#column-1{
+    align-content: center;
+    justify-content: center;
+    width:100%;
+    height:5em;
+    background-image: url(https://cdn.glitch.com/27788a75-2dd2-4e45-aad4-00713b453a67%2Fni%C3%B1a-love-math.jpg?v=1615430226628);
+    background-size:cover;
+}
+
+.row input {
+  align-items: center;
+}
+#user-answer{
+  width:200px;
+}
+.timer{
+  font-size: 2em;
+}
+.cron{
+  margin:2em;
+}
+footer{
+  margin:auto;
+  padding-top:2%;
+  border-top:solid 3px #aaaaaa;
+  text-align:center;
+}
+.social{
+  grid-column:2/3;
+  margin-left:250px;
+}

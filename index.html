@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Easy Math Learning | Home</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link type="text/css" rel="stylesheet" href="./public/css/style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Slab&display=swap" rel="stylesheet">
+      <script src="./public/js/math_operations.js"></script>
+    </head>
+    
+    <body>
+        <header>
+          <div id="main-title">
+            <h1>Easy Math Learning</h1>
+            <h3><i>"Practice makes you a master"</i></h3>
+          </div>
+        </header>
+            <nav>
+              <img id="logo" src="https://cdn.glitch.com/27788a75-2dd2-4e45-aad4-00713b453a67%2Flogo2.png?v=1613884211031" alt="logo">
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Lessons</li></a>
+                    <a href="contact-us.html"><li>Contact Us</li></a>
+                    <a id="login" href="login.html"><li>Login</li></a>
+                </ul> 
+            </nav>
+        <main>
+
+            <section class="sect-1" id="home-messages">
+              <div class="sect-1-content">
+                <h2>About Easy Math Learning</h2>
+                <p>
+                    Easy Math Learning is a project destinated to help young students to improve 
+                    their skills in solving math problems. Our tools are designed to help you to 
+                    master from basic to complex math operations by using three keys indicators:
+                </p>
+                <ul>
+                    <li><strong>Average of Hits:</strong> Naturally, a person knows how to solve 
+                        math problems if can find the right answer. Average of Hits value is given 
+                        by the number of right answers divided by the number of tries.</li><br>
+                    <li><strong>Structure:</strong> When solving problems, reach the right answer 
+                        is not enough, you must also know “how write” your answers correctly. You 
+                        can see a set of templates explaining how to solve problems step by step 
+                        in the section Lessons (coming soon).</li><br>
+                    <li><strong>Speed:</strong> while present a test the time becomes a very 
+                        dangerous enemy. Be able to solve problems within the limit time could 
+                        determine if you pass or not the test, even if you know how to solve the 
+                        problem, that’s why to improve your speed every exercise keep a register 
+                        of the time expended in each problem so you can work to improve it.</li>
+                </ul>                
+              </div>
+              <div class="sect-1-img" >
+                <img src="https://cdn.glitch.com/27788a75-2dd2-4e45-aad4-00713b453a67%2Fgirl-writing.jpg?v=1613949678190">
+              </div>
+            </section>
+          
+          <section class="sect-2">
+            <h2>How This Work?</h2>
+            <p>
+                You can improve your time by using our free online calculator tool and timer. 
+                Unlike other calculators, this will not return the answer immediately but will 
+                wait until the user provides an answer, ones the answer is submitted the timer 
+                stops, and the answer is shown.
+            </p>
+            <h2>
+                Try Out!
+            </h2>
+            <ol>
+              <li>Write the exercise using the calculator.</li>
+              <li>When you are ready press the Start button.</li>
+              <li>Write your answer and press Stop button.</li>
+              <li>Compare the answers and improve your time.</li>
+            </ol>
+          </section>
+          
+            <section class="math-calculator">
+                <div class="calculator">
+                    <form action="#" name="calculadora" id="calculadora">
+                        <div id="scrn-txt" style="align-items:right;height:20px;"></div>
+                        <div class="row">
+                        <input type="button" value="(" />
+                        <input type="button" value=")" />
+                        <input type="button" value="CE" onclick="clearRecent()"/>
+                        <input type="button" value="C" onclick="clearAll()"/>
+                        </div>
+                        <div class="row">
+                        <input type="button" value="7" onclick="numero('7')" />
+                        <input type="button" value="8" onclick="numero('8')" />
+                        <input type="button" value="9" onclick="numero('9')" />
+                        <input type="button" value="/" onclick="operador('/')"  />
+                        </div>
+                        <div class="row">
+                        <input type="button" value="4" onclick="numero('4')" />
+                        <input type="button" value="5" onclick="numero('5')" />
+                        <input type="button" value="6" onclick="numero('6')" />
+                        <input type="button" value="*" onclick="operador('*')" />
+                        </div>
+                        <div class="row">
+                        <input type="button" value="1" onclick="numero('1')" />
+                        <input type="button" value="2" onclick="numero('2')" />
+                        <input type="button" value="3" onclick="numero('3')" />
+                        <input type="button" value="-" onclick="operador('-')" />
+                        </div>
+                        <div class="row">
+                        <input type="button" value="0" onclick="numero('0')" />
+                        <input type="button" value="," onclick="operador(',')" />
+                        <input type="button" value="." onclick="numero('.')" />
+                        <input type="button" value="+" onclick="operador('+')" />
+                        </div>
+                    </form>
+                </div>
+                <div class="timer">
+                    <form name="cron" action="#">
+                      <input type="button" value="start" name="empieza" />
+                      <input type="button" value="stop" name="para" /><br/>
+                    </form>
+                    <div id="clock">0 : 00 : 00 : 00</div>
+                    <div id="average-time"></div>
+                </div>
+
+                <div class="ans-result">
+                    <label for="user-answer">Your Answer</label>
+                    <input type="text" id="user-answer" />
+                    <div id="right-answer"></div>
+                </div>
+              <div class="average"><label for="average-time">Average: </label></div>
+            </section>
+        </main>
+
+        <footer>
+          <img src="https://cdn.glitch.com/27788a75-2dd2-4e45-aad4-00713b453a67%2Flogo-s.png?v=1617799083523">
+          <p>&copy; Easy Math Learning 2021 | Rosana Garcia | | <a href="site-plan.html">Site Plan</a></p>            
+        </footer>
+    </body>
+</html>

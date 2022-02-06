@@ -1,0 +1,128 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #ECE2D0;
+  --secondary-color: #D5B9B2;
+  --accent1-color: #A26769;
+  --accent2-color: #6D2E46;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: 'Roboto Slab', serif;
+  --paragraph-font: 'Inter', sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: black;  /* headlines on a white background */ 
+  --headline-color-on-color: black; /* headlines on a colored background */ 
+  --paragraph-color-on-white: black; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #A26769;
+  --nav-link-color: #FFFF;
+  --nav-background-color: #6D2E46;
+  --nav-hover-link-color: #6D2E46;
+  --nav-hover-background-color: #D5B9B2;;
+}
+
+html {
+  background-color: var(--primary-color);
+}
+body {
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+  margin-left:1em;
+}
+header {
+  width:100%;
+  margin:auto;
+  text-align: center;
+  color: var(--paragraph-color-on-color);
+  background-image: url("https://cdn.glitch.com/27788a75-2dd2-4e45-aad4-00713b453a67%2Fmath.jpeg?v=1613884445096");
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  text-align: center;
+  font-size: 1.2em;
+  display:grid;
+  grid-template-columns: 25% 75%;
+  align-items:center;
+  justify-items:center;
+  margin: auto;
+}
+#logo{
+  width:100%;
+  height:100%;
+  background-repeat:no-repeat;
+  background-size:cover; 
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+main{
+  position:relative;
+  display:flex;
+  padding:auto;
+  margin:auto;
+  margin-top:5em;
+  margin-bottom:5em;
+  box-sizing: content-box;
+  width: 80%;
+  height:35em;
+  align-items:center;
+  justify-items:center;
+  align-content:center;
+  justify-content:center;
+}
+label{
+  margin: 10px 20px 20px 10px;
+}
+input{
+  width:80%;
+  height:3em;
+  margin: 10px 20px 20px 10px;
+}
+
+#login-frame{
+    border-radius: 10px;
+    border: dotted #A26769 10px;
+    width: 100%;
+    height: 100%;
+    position:relative;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 50% 50%;
+}
+ol{
+  margin-left:2em;
+}
+.btns{
+  width:50%;
+  margin:auto;
+  align-items:center;
+  justify-items:center;
+
+}
+button{
+  width:5em;
+  height:3em;
+  text-align:center;
+  margin-left:2em;
+}
+#column-1{
+    height:100%;
+    background-image: url(https://cdn.glitch.com/27788a75-2dd2-4e45-aad4-00713b453a67%2Fni%C3%B1a-love-math.jpg?v=1615430226628);
+}

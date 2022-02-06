@@ -1,0 +1,42 @@
+#bander{
+  background-image:url("https://cdn.glitch.com/27788a75-2dd2-4e45-aad4-00713b453a67%2Fscuola-a-casa.png?v=1617745418027");
+  background-repeat:no-repeat;
+    width:100%;
+    height:480px;
+  background-size: cover;
+  margin:auto;
+}
+
+main{
+  text-align:center;
+  height:35em;
+}
+h2{
+  font-size:2.5em;
+  text-align:left;
+  margin-left:5%;
+  margin-top:0;
+}
+#cntc{
+  border: dotted #A26769 10px;
+  height:35em;
+}
+button{
+  width:5em;
+  height:3em;
+  text-align:center;
+}
+.icon{
+  width:40px;
+  height:40px;
+}
+label{
+  margin: 10px 20px 20px 10px;
+}
+input{
+  width:80%;
+  height:3em;
+}
+.social-med-icons{
+  margin-top:3%;
+}
