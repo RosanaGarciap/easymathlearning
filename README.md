@@ -1,0 +1,2 @@
+# easymathlearning
+website for math education (project) The goal is help students from 4th to 6th to improve their math skills using three indicators: Average of Hits (showed by the number of acerts and mistakes), structure (prox lesson page), and speed (time in give the right answer). Initially, this webpage shows the frontend design and basic math operations using Javascript (addition, subtraction, etc.)
